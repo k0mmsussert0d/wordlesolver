@@ -1,0 +1,22 @@
+{
+  "name": "docker_web_app",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "First Last <first.last@example.com>",
+  "main": "bin/index.js",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "bin": {
+    "wordlesolver": "./index.js"
+  },
+  "type": "module",
+  "sourceType": "module",
+  "dependencies": {
+    "boxen": "^6.2.1",
+    "chalk": "^5.0.0",
+    "express": "^4.16.1",
+    "inquirer": "^8.2.0"
+  }
+}
