@@ -1,11 +1,10 @@
 <h1 style="text-align: center;">
 wordlesolver
 </h1>
-<p style="text-align: center; font-style: italic;">
-CLI tool for solving wordle riddles
 
-![Demo](./demo.gif)
-</p>
+*CLI tool for solving wordle riddles*
+
+<img src="https://github.com/k0mmsussert0d/wordlesolver/raw/main/demo.gif" width=530 height=250 alt="Demo" />
 
 ## Usage
 This tool comes without a dictionary file used as a source of possible solutions. It must be prepared first.
