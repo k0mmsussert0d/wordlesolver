@@ -6,6 +6,7 @@ import * as events from 'events';
 import inquirer from 'inquirer';
 import chalk from 'chalk';
 import boxen from 'boxen';
+import { program } from 'commander';
 
 async function wordsFromFile(path, predicate) {
     const res = [];
@@ -117,9 +118,17 @@ function convertToPredicate(word, mask, prev) {
 }
 
 async function main() {
+    let path;
+    program
+        .argument('<path_to_dictionary>', 'p')
+        .action(pathToDictionary => {
+            path = pathToDictionary;
+        });
+    program.parse();
+
     let { word, mask } = await ask('_____', 'NNNNN');
     let pred = convertToPredicate(word, mask);
-    let matches = await wordsFromFile('./wordlist', pred);
+    let matches = await wordsFromFile(path, pred);
 
     while (matches.length > 1) {
         ({ word, mask } = await askWithList(matches.map(m => {
