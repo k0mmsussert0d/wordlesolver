@@ -1,10 +1,10 @@
 {
-  "name": "docker_web_app",
+  "name": "wordlesolver",
   "version": "1.0.0",
-  "description": "Node.js on Docker",
-  "author": "First Last <first.last@example.com>",
-  "main": "bin/index.js",
-  "private": true,
+  "description": "Interactive CLI tool for solving worlde riddles",
+  "author": "Maksymilian Babarowski <maksymilian.babarowski@gmail.com>",
+  "main": "./index.js",
+  "private": false,
   "scripts": {
     "start": "node index.js"
   },
