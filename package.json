@@ -1,8 +1,12 @@
 {
   "name": "@k0mmsussert0d/wordlesolver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Interactive CLI tool for solving worlde riddles",
   "author": "Maksymilian Babarowski <maksymilian.babarowski@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k0mmsussert0d/wordlesolver.git"
+  },
   "main": "./index.js",
   "private": false,
   "scripts": {
